@@ -924,9 +924,12 @@ CSID_TG:
 	}
 
 	pr_err("%s probe succeeded", slave_info->sensor_name);
+<<<<<<< HEAD
 
 	s_ctrl->bypass_video_node_creation =
 		slave_info->bypass_video_node_creation;
+=======
+>>>>>>> fe2600b... misc: More cleaning
 
 	/*
 	 * Update the subdevice id of flash-src based on availability in kernel.

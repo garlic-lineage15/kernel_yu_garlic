@@ -1007,6 +1007,10 @@ static int32_t msm_flash_get_dt_data(struct device_node *of_node,
 			__func__, __LINE__, rc);
 		return rc;
 	}
+<<<<<<< HEAD
+=======
+	return rc;
+>>>>>>> fe2600b... misc: More cleaning
 
 	/* Read the gpio information from device tree */
 	rc = msm_sensor_driver_get_gpio_data(
@@ -1023,8 +1027,11 @@ static int32_t msm_flash_get_dt_data(struct device_node *of_node,
 		fctrl->flash_driver_type = FLASH_DRIVER_GPIO;
 	CDBG("%s:%d fctrl->flash_driver_type = %d", __func__, __LINE__,
 		fctrl->flash_driver_type);
+<<<<<<< HEAD
 
 	return rc;
+=======
+>>>>>>> fe2600b... misc: More cleaning
 }
 
 #ifdef CONFIG_COMPAT

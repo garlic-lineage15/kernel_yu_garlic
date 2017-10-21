@@ -534,7 +534,7 @@ config QPNP_FG
 	  Say Y here to enable the Fuel Gauge driver. This adds support for
 	  battery fuel gauging and state of charge of battery connected to the
 	  fuel gauge. The state of charge is reported through a BMS power
-	  supply property and also sends uevents when the capacity is updated.
+	  supply property and also sends uevents when the capacity is updated
 
 config QPNP_FG_GEN3
 	tristate "QPNP GEN3 fuel gauge driver"
@@ -546,7 +546,6 @@ config QPNP_FG_GEN3
 	  the fuel gauge. The state of charge is reported through a BMS power
 	  supply property and also sends uevents when the capacity is updated.
 
-#caizhifu add start for tinno battery fg debug for charging, 2016-11-29
 config TINNO_BATTERY_FG_HEART
 	tristate "TINNO battery FG heart config for debug"
 	depends on SPMI || MSM_SPMI
@@ -554,7 +553,6 @@ config TINNO_BATTERY_FG_HEART
 	help
 	 Say Y here to enable support for tinno battery heart update for charger debug
 	 PMIC chips.
-#caizhifu add end for tinno battery fg debug for charging, 2016-11-29
 
 config BATTERY_BCL
 	tristate "Battery Current Limit driver"
